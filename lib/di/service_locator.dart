@@ -1,5 +1,6 @@
 import 'package:app4_receitas/data/models/services/recipe_service.dart';
 import 'package:app4_receitas/data/repositories/recipe_repository.dart';
+import 'package:app4_receitas/ui/recipe_detail/recipe_detail_view_model.dart';
 import 'package:app4_receitas/ui/recipes/recipes_view_model.dart';
 import 'package:get_it/get_it.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -16,6 +17,11 @@ Future<void> setupDependencies() async {
   // Recipe Repository
   getIt.registerLazySingleton<RecipeRepository>(() => RecipeRepository());
 
-  // Recipe ViewModel
+  // Recipe View Model
   getIt.registerLazySingleton<RecipesViewModel>(() => RecipesViewModel());
+
+  // Recipe Detail View Model
+  getIt.registerLazySingleton<RecipeDetailViewModel>(
+    () => RecipeDetailViewModel(),
+  );
 }

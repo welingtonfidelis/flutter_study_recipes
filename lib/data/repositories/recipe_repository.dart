@@ -13,4 +13,27 @@ class RecipeRepository {
       throw Exception('Falha ao carregar receitas: ${e.toString()}');
     }
   }
+
+  Future<Recipe?> getRecipeById(String id) async {
+    try {
+      final rawData = await _service.fetchRecipeById(id);
+      return Recipe.fromJson(rawData);
+    } catch (e) {
+      throw Exception('Falha ao carrega receita: ${e.toString()}');
+    }
+  }
+
+  Future<List<Recipe>> getFavRecipes(String userId) async {
+    try {
+      final rawData = await _service.fetchFavRecipes(userId);
+      return rawData
+          .where((data) => data['recipes'] != null)
+          .map(
+            (data) => Recipe.fromJson(data['recipes'] as Map<String, dynamic>),
+          )
+          .toList();
+    } catch (e) {
+      throw Exception('Falha ao carregar receitas: ${e.toString()}');
+    }
+  }
 }

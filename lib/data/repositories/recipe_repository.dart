@@ -36,4 +36,20 @@ class RecipeRepository {
       throw Exception('Falha ao carregar receitas: ${e.toString()}');
     }
   }
+
+  Future<void> addFavRecipe(String recipeId, String userId) async {
+    try {
+      return await _service.addFavRecipe(recipeId, userId);
+    } catch (e) {
+      throw Exception('Falha ao adicionar receita: ${e.toString()}');
+    }
+  }
+
+  Future<void> removeFavRecipe(String recipeId, String userId) async {
+    try {
+      return await _service.removeFavRecipe(recipeId, userId);
+    } catch (e) {
+      throw Exception('Falha ao remover receita: ${e.toString()}');
+    }
+  }
 }

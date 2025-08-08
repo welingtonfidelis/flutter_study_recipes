@@ -1,6 +1,6 @@
-import 'package:app4_receitas/data/models/recipe.dart';
-import 'package:app4_receitas/data/models/services/recipe_service.dart';
-import 'package:app4_receitas/di/service_locator.dart';
+import 'package:app_recipes/data/models/recipe.dart';
+import 'package:app_recipes/data/models/services/recipe_service.dart';
+import 'package:app_recipes/di/service_locator.dart';
 
 class RecipeRepository {
   final _service = getIt<RecipeService>();

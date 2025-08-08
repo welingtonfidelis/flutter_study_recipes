@@ -1,4 +1,4 @@
-import 'package:app4_receitas/ui/widgets/custom_drawer.dart';
+import 'package:app_recipes/ui/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

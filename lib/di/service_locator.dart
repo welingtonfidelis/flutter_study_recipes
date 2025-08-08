@@ -1,8 +1,8 @@
-import 'package:app4_receitas/data/models/services/recipe_service.dart';
-import 'package:app4_receitas/data/repositories/recipe_repository.dart';
-import 'package:app4_receitas/ui/fav_recipes/fav_recipes_view_model.dart';
-import 'package:app4_receitas/ui/recipe_detail/recipe_detail_view_model.dart';
-import 'package:app4_receitas/ui/recipes/recipes_view_model.dart';
+import 'package:app_recipes/data/models/services/recipe_service.dart';
+import 'package:app_recipes/data/repositories/recipe_repository.dart';
+import 'package:app_recipes/ui/fav_recipes/fav_recipes_view_model.dart';
+import 'package:app_recipes/ui/recipe_detail/recipe_detail_view_model.dart';
+import 'package:app_recipes/ui/recipes/recipes_view_model.dart';
 import 'package:get_it/get_it.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 

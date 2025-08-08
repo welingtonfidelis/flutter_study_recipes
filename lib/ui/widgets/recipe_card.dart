@@ -1,5 +1,5 @@
-import 'package:app4_receitas/data/models/recipe.dart';
-import 'package:app4_receitas/ui/widgets/recipe_row_details.dart';
+import 'package:app_recipes/data/models/recipe.dart';
+import 'package:app_recipes/ui/widgets/recipe_row_details.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

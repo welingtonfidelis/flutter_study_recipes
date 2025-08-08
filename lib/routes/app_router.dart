@@ -1,7 +1,7 @@
-import 'package:app4_receitas/ui/base_screen.dart';
-import 'package:app4_receitas/ui/fav_recipes/fav_recipes_view.dart';
-import 'package:app4_receitas/ui/recipe_detail/recipe_detail_view.dart';
-import 'package:app4_receitas/ui/recipes/recipes_view.dart';
+import 'package:app_recipes/ui/base_screen.dart';
+import 'package:app_recipes/ui/fav_recipes/fav_recipes_view.dart';
+import 'package:app_recipes/ui/recipe_detail/recipe_detail_view.dart';
+import 'package:app_recipes/ui/recipes/recipes_view.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {

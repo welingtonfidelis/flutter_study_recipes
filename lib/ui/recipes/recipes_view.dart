@@ -1,7 +1,7 @@
-import 'package:app4_receitas/di/service_locator.dart';
-import 'package:app4_receitas/ui/fav_recipes/fav_recipes_view_model.dart';
-import 'package:app4_receitas/ui/recipes/recipes_view_model.dart';
-import 'package:app4_receitas/ui/widgets/recipe_card.dart';
+import 'package:app_recipes/di/service_locator.dart';
+import 'package:app_recipes/ui/fav_recipes/fav_recipes_view_model.dart';
+import 'package:app_recipes/ui/recipes/recipes_view_model.dart';
+import 'package:app_recipes/ui/widgets/recipe_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:go_router/go_router.dart';

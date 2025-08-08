@@ -1,6 +1,6 @@
-import 'package:app4_receitas/data/models/recipe.dart';
-import 'package:app4_receitas/data/repositories/recipe_repository.dart';
-import 'package:app4_receitas/di/service_locator.dart';
+import 'package:app_recipes/data/models/recipe.dart';
+import 'package:app_recipes/data/repositories/recipe_repository.dart';
+import 'package:app_recipes/di/service_locator.dart';
 import 'package:get/get.dart';
 
 class RecipesViewModel extends GetxController {

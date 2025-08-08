@@ -1,7 +1,7 @@
-import 'package:app4_receitas/di/service_locator.dart';
-import 'package:app4_receitas/routes/app_router.dart';
-import 'package:app4_receitas/utils/config/env.dart';
-import 'package:app4_receitas/utils/theme/custom_theme_controller.dart';
+import 'package:app_recipes/di/service_locator.dart';
+import 'package:app_recipes/routes/app_router.dart';
+import 'package:app_recipes/utils/config/env.dart';
+import 'package:app_recipes/utils/theme/custom_theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';

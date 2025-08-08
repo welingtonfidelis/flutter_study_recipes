@@ -1,3 +1,3 @@
-# app4_receitas
+# app_recipes
 
 A new Flutter project.

@@ -1,4 +1,4 @@
-import 'package:app4_receitas/data/models/recipe.dart';
+import 'package:app_recipes/data/models/recipe.dart';
 import 'package:flutter/material.dart';
 
 class RecipeRowDetails extends StatelessWidget {

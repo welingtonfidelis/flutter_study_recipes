@@ -1,5 +1,8 @@
+import 'package:app_recipes/data/models/services/auth_service.dart';
 import 'package:app_recipes/data/models/services/recipe_service.dart';
+import 'package:app_recipes/data/repositories/auth_repository.dart';
 import 'package:app_recipes/data/repositories/recipe_repository.dart';
+import 'package:app_recipes/ui/auth/auth_view_model.dart';
 import 'package:app_recipes/ui/fav_recipes/fav_recipes_view_model.dart';
 import 'package:app_recipes/ui/recipe_detail/recipe_detail_view_model.dart';
 import 'package:app_recipes/ui/recipes/recipes_view_model.dart';
@@ -26,8 +29,10 @@ Future<void> setupDependencies() async {
     () => RecipeDetailViewModel(),
   );
 
-  // Fav Recipe View Model 
-    getIt.registerLazySingleton<FavRecipesViewModel>(
-    () => FavRecipesViewModel(),
-  );
+  // Fav Recipe View Model
+  getIt.registerLazySingleton<FavRecipesViewModel>(() => FavRecipesViewModel());
+
+  getIt.registerLazySingleton<AuthViewModel>(() => AuthViewModel());
+  getIt.registerLazySingleton<AuthService>(() => AuthService());
+  getIt.registerLazySingleton<AuthRepository>(() => AuthRepository());
 }
